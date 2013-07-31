@@ -21,7 +21,7 @@ def keyphrase(text):
     payload = {
         'appid':APP_ID,
         'sentence':text,
-        'outpu':'xml'
+        'output':'xml'
     }
     r = requests.post(YAHOO_KEYPHRASE_URL, data=payload)
     if r.status_code == requests.codes.ok:
